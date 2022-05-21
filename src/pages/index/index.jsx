@@ -41,7 +41,7 @@ const Index = () => {
         <Text className="label">运行环境</Text>
         <Text className="note">{env}</Text>
       </View>
-      <Text>{uppercase}</Text>
+      <Text className="bold">{uppercase}</Text>
       <Field value={text} placeholder="请输入用户名" onChange={onChange} />
       <Button className="button" onClick={() => setTitle('Taro Hooks Nice!')}>
         设置标题

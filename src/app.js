@@ -1,5 +1,7 @@
 import { Component } from 'react';
+import 'basscss/css/basscss.min.css';
 import './app.scss';
+
 class App extends Component {
   componentDidMount() {}
 
