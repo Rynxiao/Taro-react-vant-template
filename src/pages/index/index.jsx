@@ -1,5 +1,6 @@
-import React, { useCallback } from 'react';
+import { useCallback } from 'react';
 import { View, Text, Button, Image } from '@tarojs/components';
+import { Button as VantButton } from '@antmjs/vantui';
 import { useEnv, useNavigationBar, useModal, useToast } from 'taro-hooks';
 import logo from './hook.png';
 
@@ -25,6 +26,7 @@ const Index = () => {
 
   return (
     <View className="wrapper">
+      <VantButton type="primary">Test</VantButton>
       <Image className="logo" src={logo} />
       <Text className="title">为Taro而设计的Hooks Library</Text>
       <Text className="desc">目前覆盖70%官方API. 抹平部分API在H5端短板. 提供近40+Hooks! 并结合ahook适配Taro!</Text>
